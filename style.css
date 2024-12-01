@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.header-section {
+  background-color: #ffa500;
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+}
+.header-section h6 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.header-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 100px;
+  word-spacing: 8px;
+}
+.header-section p {
+  color: #ffffff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 43px;
+}
+.header-section img {
+  max-width: 150px; /* Limit logo size */
+  height: auto;
+}
+.food-delivery img {
+  width: 800px;
+}
+
+/* App Screenshots */
+.app-ss {
+  color: #ffac00;
+  font-weight: 800;
+  font-size: 68px;
+}
+
+.app-screenshots img {
+  transition: transform 0.3s ease;
+}
+.app-screenshots img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  background-color: black;
+}
+
+/* Footer Styles */
+.custom-footer {
+  background-color: #343a40; /* Dark gray background */
+  color: #ffffff; /* White text */
+  font-size: 1rem;
+}
+
+.custom-footer .footer-logo {
+  max-width: 150px; /* Limit logo size */
+  height: auto;
+  filter: brightness(0) invert(1); /* Make the logo white for contrast */
+}
+
+.custom-footer .footer-text {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+.custom-footer .row {
+  align-items: center; /* Vertically center content */
+}
+
+@media (max-width: 768px) {
+  .header-section h1 {
+    font-size: 40px; /* Adjust heading size for mobile */
+    line-height: 50px;
+  }
+
+  .header-section p {
+    font-size: 18px; /* Adjust paragraph size for mobile */
+  }
+
+  .food-delivery img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+
+  .custom-footer .footer-logo {
+    margin-bottom: 15px;
+  }
+
+  .custom-footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
